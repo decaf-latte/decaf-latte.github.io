@@ -14,7 +14,7 @@
 
 
 <!-- `site.alt_lang` can specify a language different from the UI -->
-<html lang="ko-KR" >
+<html lang="en" >
   <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
@@ -32,7 +32,7 @@
 <meta name="generator" content="Jekyll v4.3.4" />
 <meta property="og:title" content="Writing a New Post" />
 <meta name="author" content="Cotes Chung" />
-<meta property="og:locale" content="ko_KR" />
+<meta property="og:locale" content="en" />
 <meta name="description" content="This tutorial will guide you how to write a post in the Chirpy template, and it’s worth reading even if you’ve used Jekyll before, as many features require specific variables to be set." />
 <meta property="og:description" content="This tutorial will guide you how to write a post in the Chirpy template, and it’s worth reading even if you’ve used Jekyll before, as many features require specific variables to be set." />
 <link rel="canonical" href="http://localhost:4000/posts/write-a-new-post/" />
@@ -224,7 +224,7 @@
 
 
 
-  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.13/dayjs.min.js,npm/dayjs@1.11.13/locale/ko.js,npm/dayjs@1.11.13/plugin/relativeTime.js,npm/dayjs@1.11.13/plugin/localizedFormat.js,npm/tocbot@4.32.2/dist/tocbot.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.13/dayjs.min.js,npm/dayjs@1.11.13/locale/en.js,npm/dayjs@1.11.13/plugin/relativeTime.js,npm/dayjs@1.11.13/plugin/localizedFormat.js,npm/tocbot@4.32.2/dist/tocbot.min.js"></script>
 
 
 
@@ -271,7 +271,7 @@
       <li class="nav-item">
         <a href="/" class="nav-link">
           <i class="fa-fw fas fa-home"></i>
-          <span>홈</span>
+          <span>HOME</span>
         </a>
       </li>
       <!-- the real tabs -->
@@ -281,7 +281,7 @@
             <i class="fa-fw fas fa-stream"></i>
             
 
-            <span>카테고리</span>
+            <span>CATEGORIES</span>
           </a>
         </li>
         <!-- .nav-item -->
@@ -291,7 +291,7 @@
             <i class="fa-fw fas fa-tags"></i>
             
 
-            <span>태그</span>
+            <span>TAGS</span>
           </a>
         </li>
         <!-- .nav-item -->
@@ -301,7 +301,7 @@
             <i class="fa-fw fas fa-archive"></i>
             
 
-            <span>아카이브</span>
+            <span>ARCHIVES</span>
           </a>
         </li>
         <!-- .nav-item -->
@@ -311,7 +311,7 @@
             <i class="fa-fw fas fa-info-circle"></i>
             
 
-            <span>정보</span>
+            <span>ABOUT</span>
           </a>
         </li>
         <!-- .nav-item -->
@@ -435,7 +435,7 @@
         
           
             <span>
-              <a href="/">홈</a>
+              <a href="/">Home</a>
             </span>
 
           
@@ -458,7 +458,7 @@
     </button>
 
     <div id="topbar-title">
-      포스트
+      Post
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link">
@@ -473,10 +473,10 @@
         type="search"
         aria-label="search"
         autocomplete="off"
-        placeholder="검색..."
+        placeholder="Search..."
       >
     </search>
-    <button type="button" class="btn btn-link text-decoration-none" id="search-cancel">취소</button>
+    <button type="button" class="btn btn-link text-decoration-none" id="search-cancel">Cancel</button>
   </div>
 </header>
 
@@ -980,7 +980,7 @@
     <div class="post-meta text-muted">
       <!-- published date -->
       <span>
-        게시
+        Posted
         <!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
@@ -992,12 +992,12 @@
 <time
   
   data-ts="1565244600"
-  data-df="YYYY/MM/DD"
+  data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  2019/08/08
+  Aug  8, 2019
 </time>
 
       </span>
@@ -1049,9 +1049,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="2145 단어"
+  title="2145 words"
 >
-  <em>11 분</em>읽는 시간</span>
+  <em>11 min</em> read</span>
 
         </div>
       </div>
@@ -1067,7 +1067,7 @@
     </div>
 
     <button id="toc-solo-trigger" type="button" class="toc-trigger btn btn-outline-secondary btn-sm">
-      <span class="label ps-2 pe-1">바로가기</span>
+      <span class="label ps-2 pe-1">Contents</span>
       <i class="fa-solid fa-angle-right fa-fw"></i>
     </button>
 
@@ -1095,7 +1095,7 @@
 
 <div class="language-yaml highlighter-rouge"><div class="code-header">
         <span data-label-text="YAML"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -1123,7 +1123,7 @@
 
 <div class="language-yaml highlighter-rouge"><div class="code-header">
         <span data-label-text="YAML"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -1141,7 +1141,7 @@
 
 <div file="_data/authors.yml" class="language-yaml highlighter-rouge"><div class="code-header">
         <span data-label-text="_data/authors.yml"><i class="far fa-file-code fa-fw"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -1155,7 +1155,7 @@
 
 <div class="language-yaml highlighter-rouge"><div class="code-header">
         <span data-label-text="YAML"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -1179,7 +1179,7 @@
 
 <div class="language-yaml highlighter-rouge"><div class="code-header">
         <span data-label-text="YAML"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 </pre></td><td class="rouge-code"><pre><span class="nn">---</span>
@@ -1195,7 +1195,7 @@
 
 <div class="language-yaml highlighter-rouge"><div class="code-header">
         <span data-label-text="YAML"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 </pre></td><td class="rouge-code"><pre><span class="nn">---</span>
@@ -1211,7 +1211,7 @@
 
 <div class="language-yaml highlighter-rouge"><div class="code-header">
         <span data-label-text="YAML"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 </pre></td><td class="rouge-code"><pre><span class="nn">---</span>
@@ -1233,7 +1233,7 @@
 
     <div class="language-yaml nolineno highlighter-rouge" file="_config.yml"><div class="code-header">
         <span data-label-text="_config.yml"><i class="far fa-file-code fa-fw"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre><span class="na">cdn</span><span class="pi">:</span> <span class="s">https://cdn.com</span>
 </pre></td></tr></tbody></table></code></div>    </div>
   </li>
@@ -1242,7 +1242,7 @@
 
     <div class="language-yaml nolineno highlighter-rouge"><div class="code-header">
         <span data-label-text="YAML"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 </pre></td><td class="rouge-code"><pre><span class="nn">---</span>
@@ -1262,7 +1262,7 @@
 
 <div class="language-markdown nolineno highlighter-rouge"><div class="code-header">
         <span data-label-text="Markdown"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 </pre></td><td class="rouge-code"><pre><span class="p">![</span><span class="nv">img-description</span><span class="p">](</span><span class="sx">/path/to/image</span><span class="p">)</span>
 <span class="ge">_Image Caption_</span>
@@ -1274,7 +1274,7 @@
 
 <div class="language-markdown nolineno highlighter-rouge"><div class="code-header">
         <span data-label-text="Markdown"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre><span class="p">![</span><span class="nv">Desktop View</span><span class="p">](</span><span class="sx">/assets/img/sample/mockup.png</span><span class="p">)</span>{: width="700" height="400" }
 </pre></td></tr></tbody></table></code></div></div>
 
@@ -1286,7 +1286,7 @@
 
 <div class="language-markdown nolineno highlighter-rouge"><div class="code-header">
         <span data-label-text="Markdown"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre><span class="p">![</span><span class="nv">Desktop View</span><span class="p">](</span><span class="sx">/assets/img/sample/mockup.png</span><span class="p">)</span>{: w="700" h="400" }
 </pre></td></tr></tbody></table></code></div></div>
 
@@ -1306,7 +1306,7 @@
 
     <div class="language-markdown nolineno highlighter-rouge"><div class="code-header">
         <span data-label-text="Markdown"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre><span class="p">![</span><span class="nv">Desktop View</span><span class="p">](</span><span class="sx">/assets/img/sample/mockup.png</span><span class="p">)</span>{: .normal }
 </pre></td></tr></tbody></table></code></div>    </div>
   </li>
@@ -1315,7 +1315,7 @@
 
     <div class="language-markdown nolineno highlighter-rouge"><div class="code-header">
         <span data-label-text="Markdown"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre><span class="p">![</span><span class="nv">Desktop View</span><span class="p">](</span><span class="sx">/assets/img/sample/mockup.png</span><span class="p">)</span>{: .left }
 </pre></td></tr></tbody></table></code></div>    </div>
   </li>
@@ -1324,7 +1324,7 @@
 
     <div class="language-markdown nolineno highlighter-rouge"><div class="code-header">
         <span data-label-text="Markdown"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre><span class="p">![</span><span class="nv">Desktop View</span><span class="p">](</span><span class="sx">/assets/img/sample/mockup.png</span><span class="p">)</span>{: .right }
 </pre></td></tr></tbody></table></code></div>    </div>
   </li>
@@ -1336,7 +1336,7 @@
 
 <div class="language-markdown highlighter-rouge"><div class="code-header">
         <span data-label-text="Markdown"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 </pre></td><td class="rouge-code"><pre><span class="p">![</span><span class="nv">Light mode only</span><span class="p">](</span><span class="sx">/path/to/light-mode.png</span><span class="p">)</span>{: .light }
 <span class="p">![</span><span class="nv">Dark mode only</span><span class="p">](</span><span class="sx">/path/to/dark-mode.png</span><span class="p">)</span>{: .dark }
@@ -1348,7 +1348,7 @@
 
 <div class="language-markdown nolineno highlighter-rouge"><div class="code-header">
         <span data-label-text="Markdown"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre><span class="p">![</span><span class="nv">Desktop View</span><span class="p">](</span><span class="sx">/assets/img/sample/mockup.png</span><span class="p">)</span>{: .shadow }
 </pre></td></tr></tbody></table></code></div></div>
 
@@ -1360,7 +1360,7 @@
 
 <div class="language-yaml highlighter-rouge"><div class="code-header">
         <span data-label-text="YAML"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -1378,7 +1378,7 @@
 
 <div class="language-yml highlighter-rouge"><div class="code-header">
         <span data-label-text="YAML"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 </pre></td><td class="rouge-code"><pre><span class="nn">---</span>
@@ -1392,7 +1392,7 @@
 
 <div class="language-yaml highlighter-rouge"><div class="code-header">
         <span data-label-text="YAML"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -1410,7 +1410,7 @@
 
 <div class="language-markdown nolineno highlighter-rouge"><div class="code-header">
         <span data-label-text="Markdown"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre><span class="p">![</span><span class="nv">Image description</span><span class="p">](</span><span class="sx">/path/to/image</span><span class="p">)</span>{: lqip="/path/to/lqip-file" }
 </pre></td></tr></tbody></table></code></div></div>
 
@@ -1422,7 +1422,7 @@
 
 <div class="language-liquid highlighter-rouge"><div class="code-header">
         <span data-label-text="Liquid"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre><span class="cp">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>embed/{Platform}.html<span class="w"> </span><span class="na">id</span><span class="o">=</span><span class="s1">'{ID}'</span><span class="w"> </span><span class="cp">%}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
@@ -1463,7 +1463,7 @@
 
 <div class="language-liquid highlighter-rouge"><div class="code-header">
         <span data-label-text="Liquid"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre><span class="cp">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>embed/video.html<span class="w"> </span><span class="na">src</span><span class="o">=</span><span class="s1">'{URL}'</span><span class="w"> </span><span class="cp">%}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
@@ -1484,7 +1484,7 @@
 
 <div class="language-liquid highlighter-rouge"><div class="code-header">
         <span data-label-text="Liquid"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -1512,7 +1512,7 @@
 
 <div class="language-liquid highlighter-rouge"><div class="code-header">
         <span data-label-text="Liquid"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre><span class="cp">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>embed/audio.html<span class="w"> </span><span class="na">src</span><span class="o">=</span><span class="s1">'{URL}'</span><span class="w"> </span><span class="cp">%}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
@@ -1529,7 +1529,7 @@
 
 <div class="language-liquid highlighter-rouge"><div class="code-header">
         <span data-label-text="Liquid"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -1549,7 +1549,7 @@
 
 <div class="language-yaml highlighter-rouge"><div class="code-header">
         <span data-label-text="YAML"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 </pre></td><td class="rouge-code"><pre><span class="nn">---</span>
@@ -1563,7 +1563,7 @@
 
 <div class="language-md nolineno highlighter-rouge"><div class="code-header">
         <span data-label-text="Markdown"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 </pre></td><td class="rouge-code"><pre><span class="gt">&gt; Example line for prompt.</span>
 {: .prompt-info }
@@ -1575,7 +1575,7 @@
 
 <div class="language-md nolineno highlighter-rouge"><div class="code-header">
         <span data-label-text="Markdown"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre><span class="sb">`inline code part`</span>
 </pre></td></tr></tbody></table></code></div></div>
 
@@ -1583,7 +1583,7 @@
 
 <div class="language-md nolineno highlighter-rouge"><div class="code-header">
         <span data-label-text="Markdown"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre><span class="sb">`/path/to/a/file.extend`</span>{: .filepath}
 </pre></td></tr></tbody></table></code></div></div>
 
@@ -1593,7 +1593,7 @@
 
 <div class="language-md highlighter-rouge"><div class="code-header">
         <span data-label-text="Markdown"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 </pre></td><td class="rouge-code"><pre><span class="p">```</span><span class="nl">
@@ -1607,7 +1607,7 @@
 
 <div class="language-markdown highlighter-rouge"><div class="code-header">
         <span data-label-text="Markdown"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 </pre></td><td class="rouge-code"><pre><span class="p">```</span><span class="nl">yaml
@@ -1625,7 +1625,7 @@
 
 <div class="language-markdown highlighter-rouge"><div class="code-header">
         <span data-label-text="Markdown"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -1641,7 +1641,7 @@
 
 <div class="language-markdown highlighter-rouge"><div class="code-header">
         <span data-label-text="Markdown"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -1657,7 +1657,7 @@
 
 <div class="language-markdown highlighter-rouge"><div class="code-header">
         <span data-label-text="Markdown"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -1681,7 +1681,7 @@
 
 <div class="language-yaml highlighter-rouge"><div class="code-header">
         <span data-label-text="YAML"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 </pre></td><td class="rouge-code"><pre><span class="nn">---</span>
@@ -1704,7 +1704,7 @@
 
 <div class="language-markdown highlighter-rouge"><div class="code-header">
         <span data-label-text="Markdown"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -1769,7 +1769,7 @@ If you are building the site via <code class="language-plaintext highlighter-rou
 
 <div class="language-yaml highlighter-rouge"><div class="code-header">
         <span data-label-text="YAML"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 </pre></td><td class="rouge-code"><pre><span class="nn">---</span>
@@ -1819,18 +1819,18 @@ If you are building the site via <code class="language-plaintext highlighter-rou
         
           
 
-          이 기사는 저작권자의 
+          This post is licensed under 
         <a href="https://creativecommons.org/licenses/by/4.0/">
           CC BY 4.0
         </a>
-         라이센스를 따릅니다.
+         by the author.
         
       </div>
 
       <!-- Post sharing snippet -->
 
 <div class="share-wrapper d-flex align-items-center">
-  <span class="share-label text-muted">공유하기</span>
+  <span class="share-label text-muted">Share</span>
   <span class="share-icons">
     
     
@@ -1865,8 +1865,8 @@ If you are building the site via <code class="language-plaintext highlighter-rou
       class="btn small"
       data-bs-toggle="tooltip"
       data-bs-placement="top"
-      title="링크 복사하기"
-      data-title-succeed="링크가 복사되었습니다!"
+      title="Copy link"
+      data-title-succeed="Link copied successfully!"
     >
       <i class="fa-fw fas fa-link pe-none fs-6"></i>
     </button>
@@ -1902,8 +1902,15 @@ If you are building the site via <code class="language-plaintext highlighter-rou
 
 
   <section id="access-lastmod">
-    <h2 class="panel-heading">최근 업데이트</h2>
+    <h2 class="panel-heading">Recently Updated</h2>
     <ul class="content list-unstyled ps-0 pb-1 ms-1 mt-2">
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/WritingThe-First-post-2/">첫 포스팅 작성하기</a>
+        </li>
       
         
         
@@ -2035,7 +2042,7 @@ If you are building the site via <code class="language-plaintext highlighter-rou
 
 
   <section>
-    <h2 class="panel-heading">인기 태그</h2>
+    <h2 class="panel-heading">Trending Tags</h2>
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
@@ -2067,7 +2074,7 @@ If you are building the site via <code class="language-plaintext highlighter-rou
 
   <div class="toc-border-cover z-3"></div>
   <section id="toc-wrapper" class="invisible position-sticky ps-0 pe-4 pb-4">
-    <h2 class="panel-heading ps-3 pb-1 mb-0">바로가기</h2>
+    <h2 class="panel-heading ps-3 pb-1 mb-0">Contents</h2>
     <nav id="toc"></nav>
   </section>
 
@@ -2156,7 +2163,7 @@ If you are building the site via <code class="language-plaintext highlighter-rou
 
 
   <aside id="related-posts" aria-labelledby="related-label">
-    <h3 class="mb-4" id="related-label">관련된 글</h3>
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
@@ -2173,10 +2180,10 @@ If you are building the site via <code class="language-plaintext highlighter-rou
 <time
   
   data-ts="1565454840"
-  data-df="YYYY/MM/DD"
+  data-df="ll"
   
 >
-  2019/08/11
+  Aug 11, 2019
 </time>
 
               <h4 class="pt-0 my-2">Customize the Favicon</h4>
@@ -2201,10 +2208,10 @@ If you are building the site via <code class="language-plaintext highlighter-rou
 <time
   
   data-ts="1565355300"
-  data-df="YYYY/MM/DD"
+  data-df="ll"
   
 >
-  2019/08/09
+  Aug  9, 2019
 </time>
 
               <h4 class="pt-0 my-2">Getting Started</h4>
@@ -2229,10 +2236,10 @@ If you are building the site via <code class="language-plaintext highlighter-rou
 <time
   
   data-ts="1565235180"
-  data-df="YYYY/MM/DD"
+  data-df="ll"
   
 >
-  2019/08/08
+  Aug  8, 2019
 </time>
 
               <h4 class="pt-0 my-2">Text and Typography</h4>
@@ -2260,7 +2267,7 @@ If you are building the site via <code class="language-plaintext highlighter-rou
     <a
       href="/posts/text-and-typography/"
       class="btn btn-outline-primary"
-      aria-label="이전 글"
+      aria-label="Older"
     >
       <p>Text and Typography</p>
     </a>
@@ -2270,7 +2277,7 @@ If you are building the site via <code class="language-plaintext highlighter-rou
     <a
       href="/posts/getting-started/"
       class="btn btn-outline-primary"
-      aria-label="다음 글"
+      aria-label="Newer"
     >
       <p>Getting Started</p>
     </a>
@@ -2299,19 +2306,19 @@ If you are building the site via <code class="language-plaintext highlighter-rou
       <span
         data-bs-toggle="tooltip"
         data-bs-placement="top"
-        title="명시되지 않는 한 이 사이트의 블로그 게시물은 작성자의 Creative Commons Attribution 4.0 International(CC BY 4.0) 라이선스에 따라 사용이 허가되었습니다."
-      >일부 권리 보유</span>
+        title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author."
+      >Some rights reserved.</span>
     
   </p>
 
-  <p>Powered by <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> with <a
+  <p>Using the <a
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="v7.2.3"
         href="https://github.com/cotes2020/jekyll-theme-chirpy"
         target="_blank"
         rel="noopener"
-      >Chirpy</a> theme
+      >Chirpy</a> theme for <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>.
   </p>
 </footer>
 
@@ -2420,7 +2427,7 @@ If you are building the site via <code class="language-plaintext highlighter-rou
 
 
   <section>
-    <h2 class="panel-heading">인기 태그</h2>
+    <h2 class="panel-heading">Trending Tags</h2>
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
@@ -2474,9 +2481,9 @@ If you are building the site via <code class="language-plaintext highlighter-rou
     ></button>
   </div>
   <div class="toast-body text-center pt-0">
-    <p class="px-2 mb-3">새 버전의 콘텐츠를 사용할 수 있습니다.</p>
+    <p class="px-2 mb-3">A new version of content is available.</p>
     <button type="button" class="btn btn-primary" aria-label="Update">
-      업데이트
+      Update
     </button>
   </div>
 </aside>
@@ -2509,7 +2516,7 @@ If you are building the site via <code class="language-plaintext highlighter-rou
       resultsContainer: document.getElementById('search-results'),
       json: '/assets/js/data/search.json',
       searchResultTemplate: '  <article class="px-1 px-sm-2 px-lg-4 px-xl-0">    <header>      <h2><a href="{url}">{title}</a></h2>      <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1">        {categories}        {tags}      </div>    </header>    <p>{snippet}</p>  </article>',
-      noResultsText: '<p class="mt-5">검색 결과가 없습니다.</p>',
+      noResultsText: '<p class="mt-5">Oops! No results found.</p>',
       templateMiddleware: function(prop, value, template) {
         if (prop === 'categories') {
           if (value === '') {
